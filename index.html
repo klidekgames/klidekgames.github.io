@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klidek Games — Cozy games for curious minds</title>
+  <meta name="description"
+    content="Klidek Games is a small independent studio crafting cozy, somewhat educational adventures about nature, oceans, and wonder." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Klidek Games home">
+        <span class="brand-mark">K</span>
+        <span class="brand-text">Klidek Games</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#reefonauts">Reefonauts</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Cozy & educational games about nature</p>
+          <h1>Calm games about nature and discovery.</h1>
+          <p class="hero-text">
+            We create warm, gentle adventures for curious minds, combining exploration with playful learning.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#reefonauts">Meet Reefonauts</a>
+            <a class="btn btn-secondary" href="#about">Discover the studio</a>
+          </div>
+          <ul class="hero-highlights" aria-label="Studio highlights">
+            <li>Cozy gameplay</li>
+            <li>Nature discovery</li>
+            <li>Playful learning</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <canvas class="water-canvas"></canvas>
+          <div class="hero-scene"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Our Approach</p>
+          <h2>Thoughtful worlds designed for wonder.</h2>
+        </div>
+        <div class="card-grid">
+          <article class="info-card">
+            <h3>Cozy by design</h3>
+            <p>
+              Calm pacing, soft colors, and welcoming interactions.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Gentle learning</h3>
+            <p>
+              Playful discovery through observation and simple problem-solving.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Nature-led worlds</h3>
+            <p>
+              Adventures set in oceans, forests, and ecosystems.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="reefonauts" class="section reefonauts reveal">
+        <div class="reefonauts-card">
+          <div>
+            <p class="eyebrow">Current project</p>
+            <h2>Reefonauts</h2>
+            <p>
+              A cozy underwater adventure about exploring coral reef. Pilot tiny submarine and learn about the ocean.
+            </p>
+            <ul class="feature-list">
+              <li>Gentle exploration</li>
+              <li>Marine life discovery</li>
+              <li>Hopeful ocean restoration story</li>
+            </ul>
+          </div>
+          <div class="project-panel">
+            <div class="project-media">
+              <img src="assets/reefonaut1.png" alt="Reefonauts concept art" />
+            </div>
+            <span class="pill">In development</span>
+            <h3>Playable demo coming soon.</h3>
+            <p>Currently developing the prototype and art direction.</p>
+            <a class="btn btn-primary" href="#contact">Follow the journey</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer reveal">
+      <p>Say hello at hello@klidekgames.com</p>
+      <p>© <span id="year"></span> Klidek Games. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
